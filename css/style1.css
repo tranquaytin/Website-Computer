@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	width: 100%;
+}
+header>a>img{
+	height: 50px;
+	margin-left: 60px;
+	margin-top: 35px;
+	margin-bottom: -45px;
+}
+.dn{
+	float: right;
+	width: 100%;
+	margin-right: 80px;
+	margin-top: 60px;
+	padding-bottom: 3px;
+}
+.dangky2{
+	font-weight: 600;
+	float: right;
+}
+.tendn>a{
+	color: #525252;
+}
+.tendn>a:hover{
+	color: red;
+}
+.tendn1>a{
+	color: #525252;
+}
+.tendn1>a:hover{
+	color: red;
+}
+.tendn{
+	float: right;
+}
+.tendn>a>img{
+	float: left;
+	margin-right: 5px;
+}
+.dangky1{
+	float: right;
+	font-weight: 600;
+}
+.tendn1>a>img{
+	float: right;
+	margin-right: 2px;
+}
+.tendn1{
+	margin-left: 15px;
+}
+.tendn1>a{
+	text-decoration: none;
+}
+.clearfix{
+	display: block;
+	clear: both;
+}
+.container{
+	width: 100%;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.menu{
+	width: 99%;
+	margin: 0px auto;
+	background-color:#E83434;
+	height: 42px;
+	border: 2px solid #FFFFFF;
+	border-radius: 5px;
+	clear: both;
+}
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+    text-decoration:none;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:white;
+	border-radius: 5px;
+} 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+} 
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    color:#E1E1E1;
+	font-weight: 600;
+}
+.menu > ul > li:hover > a, .menu > ul > .current-item > a 
+{
+    background:white;
+	color: red;
+}
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background: white;
+}
+.sub-menu li {
+    display:block;
+    font-size:16px;
+	border-bottom: 1px solid #EAEAEA;
+}
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+	color: black;
+}
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background: #3e3436;
+	
+}
+.timkiem{
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.timkiem input#search{
+  width: 300px;
+  height: 35px;
+  background: white;
+  border: none;
+  font-size: 10pt;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+	margin-left: 200px;
+	margin-top: 3px;
+}
+.timkiem input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+footer
+{
+	clear: both;
+	width: 100%;
+	background-color: #EFEFEF;
+	height: auto;
+	padding-top: 5px;
+}
+.col-container {
+  display: table;
+  width: 100%;
+	margin-top: 3px;
+	
+}
+div.col>p{
+	text-align: center;
+	width: 400px;
+	font-size: 15pt;
+	color: #474762;
+}
+div.social-buttons>a>i{
+	text-align: center;
+}
+.col 
+{
+  display: table-cell;
+  padding: 10px;
+	width: 300px;
+}
+.col2{
+	display: table-cell;
+	margin-left: 30px;
+	width: 300px;
+}
+.col2>p{
+	font-size: 15pt;
+	color: #474762;
+}
+.hinhchantrang{
+	width: 340px;
+	height: 150px;
+	margin-left: -80px;
+}
+.col3{
+	display: table-cell;
+	width: 300px;
+}
+.col3>p{
+	font-size: 15pt;
+	color: #474762;
+}
+.cuoi{
+	font-size: 10pt;
+	font-weight: 200;
+	color: #474747;
+}
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  color: red;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 10px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+div.col>ul>li>a{
+	text-decoration: none;
+	color: #3399D8;
+	margin-left: 100px;
+}
+div.social-buttons>a>i{
+	margin-right: 60px;
+}
+section{
+	width: 100%;
+	
+}
+div#trangchu{
+	width: 80%;
+	height: auto;
+	margin-left: -21px;
+}
+.dangnhap1{
+	margin-left: 70px;
+	margin-top: 20px;
+}
+.dangnhap>h2{
+	color: #474747;
+	font-weight: 600;
+	font-size: 17pt;
+	font-family: allerta;
+}
+.dangnhap>input{
+	background-color: #EEEEEE;
+	font-size: 35px;
+	width: 100%;
+	border: none;
+}
+.required{
+	color: red;
+}
+.dangnhap1>a{
+	text-decoration: none;
+	color: red;
+}
+
+.dangnhap1>input:hover{
+	background-color: red;
+}
+div#thanh{
+	width: 99%;
+	background-color: #EFEFEF;
+	height: 40px;
+	margin: 0 auto;
+}
+div#thanh>p{
+	padding-top: 10px;
+	padding-left: 40px;
+	font-size: 14pt;
+	color: #E93434;
+	font-weight: 600;
+}
+.button{
+	font-family: RobotoBold;
+	font-size: 18px;
+	color: #ffffff;
+	background-color: #444;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	border-radius: 0px 0px 0px 0px;
+	transition: all .3s;
+}
+
+
+
